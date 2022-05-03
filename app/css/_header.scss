@@ -1,0 +1,177 @@
+header{
+    margin: 0;
+    position: fixed;
+    z-index:100;
+    max-height: 172px;
+    .bg-dark-blue{
+        padding: 21px 35px 21px 44px;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            display: block;
+            font-family: $font-roboto;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.3125rem;
+        }
+        .flex-row-2 a{
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+            color: $white;
+            font-family: $font-roboto;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.3125rem;
+            cursor: pointer;
+            &:hover {
+                color: $orange;
+            }
+            i {
+                margin-right: 10px;
+                color: $orange;
+            }
+        }
+    }
+}
+.top-navigation{
+    padding: 26px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        display: block;
+        cursor: pointer;
+    }
+    .sidenav {
+        max-width: 620px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li a{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0 12px;
+            padding: 18px 0;
+            color: $white;
+            font-family: $font-poppins;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.125rem;
+            border-bottom: 1px solid $bg-black-op9;
+            cursor: pointer;
+            &:hover {
+                color: $light-gray;
+                border-bottom: 1px solid $orange;
+            }
+            &.closebtn{
+                display: none;
+            }
+            i{
+                font-size: 0.7rem;
+            }
+        }
+    }
+    div{
+        display: flex;
+        a {
+            display: block;
+            margin: 0 12px;
+            padding: 18px 0;
+            color: $white;
+            font-size: 1.125rem;
+            cursor: pointer;
+            &:hover {
+                color: $light-gray;
+            } 
+        }
+        .menu-btn {
+            display: none;
+        }
+    }
+}
+.logout-btn-box{
+    display: flex;
+    a {
+        display: block;
+        margin: 0 12px;
+        padding: 18px 0;
+        color: $white;
+        font-size: 1.125rem;
+        cursor: pointer;
+        &:hover {
+            color: $light-gray;
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 775px){
+    header{
+        max-height: 120px;
+        .bg-dark-blue{
+            padding: 10px 20px;
+            span{
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+            }
+        }
+    }
+    .top-navigation{
+         padding: 13px 15px;
+        .sidenav {
+            display: block;
+            height: 100%;
+            width: 0;
+            position: fixed; 
+            z-index: 101; 
+            top: 0; 
+            left:0;
+            background-color: $dark-blue;
+            overflow-x: hidden;
+            padding-top: 25px;
+            transition: 0.5s; 
+            text-align: right;
+            li a {
+                padding: 8px 8px 8px 32px;
+                font-size: 1.375rem;
+                color: $white;
+                transition: 0.3s;
+                border: none;
+                cursor: pointer;
+                &:hover {
+                    color: $orange;
+                    border: none;
+                }
+                &.closebtn{
+                    display: block;
+                    font-size: 2rem;
+                    color: $orange;
+                    margin-top: 38px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                }
+            }   
+        }
+        div {
+            .menu-btn {
+                display: block;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        .bg-dark-blue{
+            .flex-row-2 a{
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}

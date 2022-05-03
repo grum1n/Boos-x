@@ -1,0 +1,43 @@
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    form{
+        width: 330px;
+        background-color: $dark-blue;
+        margin-top: 200px;
+        padding: 30px;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        border: 1px solid $blue;
+        box-shadow: rgba(115, 153, 190, 0.2) 0px 8px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        z-index: 3;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: $blue;
+            input{
+                padding: 10px;
+                width: 270px;
+            }
+        }
+        p{
+            width: 100%;
+            text-align: right; 
+            a{
+                color: $blue;
+                border-bottom: 1px solid $dark-blue;
+                &:hover{
+                    border-bottom: 1px solid $orange;
+                }
+            }
+        }
+    }
+}

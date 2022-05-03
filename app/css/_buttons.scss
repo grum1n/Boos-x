@@ -1,0 +1,116 @@
+.btn-link{
+    border: none;
+    color: $white;
+    font-family: $font-roboto;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.square {
+        background-color: $blue;
+    }
+    &.blue {
+        background-color: $blue;
+        border-radius: 25px;
+    }
+    &.longBlue {
+        background-color: $blue;
+        border-radius: 25px;
+        padding: 17px 46px;
+    }
+    &.orange {
+        background-color: $orange;
+        border-radius: 25px;
+        padding: 17px 46px;
+    }
+    &:hover {
+        background-color:darken($blue, 10%);
+    }
+}
+
+.form-btn { 
+    // width: 165px;
+    // height: 55px;
+    border: none;
+    padding: 17px 0;
+    color: $white;
+    font-family: $font-roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+    border-radius: 3px;
+    &.blue {
+        background-color: $blue;
+    }
+    
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.login-btn {
+    width: 100%;
+    border: none;
+    color: $white;
+    font-family: $font-roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+    border-radius: 5px;
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.logout-btn{
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $orange;
+    border-radius: 5px;
+    background-color: $blue;
+    &:hover {
+        background-color: lighten($dark-blue, 35%);
+    }
+}
+
+
+/*Button to top*/
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    font-family: $font-roboto;
+    font-size: 2rem;
+    border:  2px solid $blue;
+    outline: none; 
+    background-color: $orange; 
+    color: $white;
+    cursor: pointer; 
+    padding: 6px 15px; 
+    border-radius: 50%; 
+} 
+#myBtn:hover {
+    background-color: lighten($dark-blue, 10%);
+    color: $orange;
+    border: 2px solid $orange;
+}

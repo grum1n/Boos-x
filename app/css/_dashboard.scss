@@ -1,0 +1,124 @@
+.dashboard-flex-container{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    .dashboard-flex-left-box{
+        margin: 0 auto;
+        height: 100%;
+        padding: 20px;
+        width: 450px;
+        border-radius: 25px;
+        box-shadow: lighten($orange, 35%) 0px 8px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .dashboard-flex-right-box{
+        margin: 0 auto;
+        height: 100%;
+        padding: 20px;
+        width: 450px;
+        border-radius: 25px;
+        box-shadow: lighten($orange, 35%) 0px 8px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+            background-color: $orange;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            border-radius: 0 25px 0 25px;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.dashboard-container{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.dashboard-emails-box{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 25px 0 25px;
+    border: 1px solid $orange;
+    background-color: $white;
+    i {
+        font-size: 1rem;
+        color: $blue;
+    }
+}
+
+.dashboard-left-box{
+    margin: 0 auto;
+    height: 100%;
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 25px;
+    box-shadow: lighten($orange, 35%) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input{
+        background-color: $white;
+        color: $primary-color;
+        font-size: 1rem;
+        font-family: $font-roboto;
+        font-weight: 400;
+        line-height: 1.125rem;
+        padding: 20px 25px;
+        text-align: left;
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        background-color: $white;
+        color: $primary-color;
+        font-size: 1rem;
+        font-family: $font-roboto;
+        font-weight: 400;
+        line-height: 1.125rem;
+        padding: 20px 25px;
+        text-align: left;
+    }
+    button{
+        width: 100%;
+    }
+}
+.dashboard-users-table{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lighten($orange, 35%);
+    color: $white;
+    i{
+        color: $orange;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .dashboard-flex-container{
+        .dashboard-flex-left-box{
+            width: 100%;
+        }
+        .dashboard-flex-right-box{
+            width: 100%;
+        }
+    }
+}
