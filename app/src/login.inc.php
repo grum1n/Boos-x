@@ -7,21 +7,20 @@
         $pwd = mysqli_real_escape_string($mysqli, $_POST['user_password']);
 
         if(empty($uid) || empty($pwd)) {
-            // header("Location: ../index.php?=login=empty");
-            header("Location: ../../../../pages.php?page=login&error=empty_input_fiels");
+            header("Location: ../../pages.php?page=login&error=empty_input_fiels");
             exit();
         } else {
             $sql = "SELECT * FROM boos_users WHERE user_nick_name = '$uid'";
             $result = mysqli_query($mysqli, $sql);
             $result_check = mysqli_num_rows($result);
             if($result_check < 1) {
-                header("Location: ../../../../pages.php?page=login&error");
+                header("Location: ../../pages.php?page=login&error=user_not_exist");
                 exit();
             } else {
                 if($row = mysqli_fetch_assoc($result)) {
                     $hashedPwdCheck = password_verify($pwd, $row['user_password']);
                     if($hashedPwdCheck == false) {
-                        header("Location: ../../../../pages.php?page=login&error");
+                        header("Location: ../../pages.php?page=login&error=invalid_user_psw");
                         exit();
                     } elseif($hashedPwdCheck == true) {
                         $_SESSION['u_id'] = $row['user_id'];
@@ -36,7 +35,7 @@
             }
         }
     } else {
-        header("Location: ../index.php?=login=error1");
+        header("Location: ../../pages.php?page=login&error=invalid_user_psw");
         exit();
     }
 ?>

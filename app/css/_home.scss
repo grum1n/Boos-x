@@ -1,3 +1,8 @@
+.homeHero-bg{
+    background: rgb(22,29,48);
+    background: linear-gradient(346deg, rgba(22,29,48,1) 15%, rgba(24,159,249,1) 100%);
+}
+
 .homeHero{
     min-height: 750px;
     padding-top: 250px;
@@ -8,6 +13,7 @@
     color: $white;
     gap: 22px;
     position: relative;
+
     h2{
         max-width: 1000px;
         font-family: $font-lato;

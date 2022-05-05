@@ -18,6 +18,13 @@
         align-items: flex-start;
         gap: 20px;
         z-index: 3;
+        .formErrorText{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
         div{
             display: flex;
             flex-direction: column;

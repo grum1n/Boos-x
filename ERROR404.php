@@ -17,7 +17,7 @@
 </head>
 <body>
 <?php include('app/views/header.php'); ?>
-<section class="row bg-dark-blue">
+<section class="row homeHero-bg">
     <div class="container">
         <div class="error404-page fontColor-white">
             <img src="app/images/Group-18.png" alt='image 404'/>

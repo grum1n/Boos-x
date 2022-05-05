@@ -1,5 +1,5 @@
 
-<section class="row bg-dark-blue-lighten">
+<section class="row homeHero-bg">
     <div class="container">
         <div class="homeHero"> 
             <div id="particles-js"></div>

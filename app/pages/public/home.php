@@ -1,6 +1,6 @@
 <?php include('inc/homeHero.php'); ?>
 
-<div class="row bg-dark-blue-lighten">
+<div class="row bg-dark-blue">
     <div class="site-right-radius-container bg-white">
         <ul class="home-hero-bottom-boxes">
             <li>

@@ -22,7 +22,8 @@
 /*hero section*/
 .hero{
     width: 100%;
-    background-color: lighten($dark-blue, 10%);
+    background: rgb(22,29,48);
+    background: linear-gradient(346deg, rgba(22,29,48,1) 15%, rgba(24,159,249,1) 100%);
     margin: 0;
     padding: 250px 0;
     position: relative;

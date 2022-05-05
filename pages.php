@@ -1,14 +1,5 @@
 <?php
-    require __DIR__ . '/app/src/message.inc.php';
-
-    $path = 'app/pages/public/';
-    $display = '';
-    if ($_GET['page']){
-        $page = $_GET['page'];
-        $display = $path . $page . '.php';
-    } else {
-        echo 'Welcome to my Boos dynamic web';
-    };
+    require __DIR__ . '/app/src/message.inc.php';  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,7 +21,41 @@
 <body>
 <?php include("app/views/header.php"); ?>
     <main>
-        <?php include($display); ?>
+        <?php  
+            $page = $_GET['page'];
+            $path = "app/pages/public/";
+            $pageUrl = $path . $page . '.php';
+            
+            switch ($page) {
+                case "home":
+                    include($pageUrl);
+                    break;
+                case "about":
+                    include($pageUrl);
+                    break;
+                case "services":
+                    include($pageUrl);
+                    break;
+                case "news":
+                    include($pageUrl);
+                    break;
+                case "news_single":
+                    include($pageUrl);
+                    break;
+                case "contact":
+                    include($pageUrl);
+                    break;
+                case "login":
+                    include($pageUrl);
+                    break;
+                case "register":
+                    include($pageUrl);
+                    break;
+                default:
+                    header("Location: http://localhost/vsc-kartojimas/kurso-darbas/Boos-x/ERROR404.php");
+                    break;
+            }
+        ?>
     </main>
 <?php include("app/views/footer.php"); ?>
 </body>

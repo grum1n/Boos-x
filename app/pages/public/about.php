@@ -1,6 +1,6 @@
 <?php include('inc/hero.php'); ?>
 
-<section class="row bg-dark-blue-lighten">
+<section class="row bg-dark-blue">
     <div class="site-right-radius-container bg-white">
         <?php include('inc/about_together.php'); ?>
     </div>
